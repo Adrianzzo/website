@@ -1,10 +1,21 @@
-const http = require('http');
 const express = require('express');
+const app = express();
+const port = 3000;
 
-const requestListener = function (req, res) {
-  res.writeHead(200);
-  res.end('My Server');
-}
+app.get('/', (req, res) => {
+  res.send('Hello World!')
+});
 
-const server = http.createServer(requestListener);
-server.listen(8080, () => { console.log("server is running") });
+app.get('/about', (req, res) => {
+  res.send('this is my about page')
+})
+
+app.get('/infos', (req, res) => {
+  res.send('this is infos')
+})
+
+
+
+app.listen(port, () => {
+  console.log(`Example app listening on port ${port}!`)
+});
