@@ -1,0 +1,43 @@
+
+
+ body {
+   background-color: #C49102;
+   opacity: 0.8;
+   bckground-image: url("coniferous.jpg");
+ }
+
+svg {
+  color: white;
+}
+
+a {
+  color: white;
+  margin: 5px;
+}
+
+ .header {
+   background-color: grey;
+   padding: 30px;
+ }
+
+ .topnav {
+   padding: 10px;
+   color: white;
+   background-color: black;
+ }
+
+  .heading1 {
+    color: beige;
+    text-align: center;
+  }
+
+  a:hover {
+    background-color: #C49102;
+    color: black;
+  }
+
+  .color-box {
+    background-color: green;
+    width: 100px;
+    height: 100px;
+  }
